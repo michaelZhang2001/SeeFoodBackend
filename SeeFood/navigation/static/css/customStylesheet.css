@@ -1,0 +1,67 @@
+.spartan {
+    font-family: 'Spartan', sans-serif;
+}
+
+.spartan_small {
+    font-family: 'Spartan', sans-serif;
+    font-size: smaller;
+}
+
+.bottom_space {
+    padding-bottom: 5em;
+}
+
+.top_space {
+    padding-top: 2em;
+}
+
+.right_space {
+    padding-right: 0.5em;
+    padding-left: 0.5em;
+}
+
+.line{
+    width: 100%;
+    height: 47px;
+    border-bottom: 1px solid black;
+    position: absolute;
+}
+
+.dark_back {
+    background-color: #252525;
+    
+}
+
+.btn-seefood {
+    color: #fff;
+    background-color: #ff6646ff;
+    border-color: #ff6646ff;
+  }
+  
+  .btn-seefood:hover {
+    color: #fff;
+    background-color: #ff6646ff;
+    border-color: #ff6646ff;
+  }
+  
+  .btn-seefood:focus, .btn-danger.focus {
+    box-shadow: 0 0 0 0.2rem #ff6646ff;
+  }
+  
+  .btn-seefood.disabled, .btn-danger:disabled {
+    color: #fff;
+    background-color: #ff6646ff;
+    border-color: #ff6646ff;
+  }
+  
+  .btn-seefood:not(:disabled):not(.disabled):active, .btn-seefood:not(:disabled):not(.disabled).active,
+  .show > .btn-seefood.dropdown-toggle {
+    color: #fff;
+    background-color: #ff6646ff;
+    border-color: #ff6646ff;
+  }
+  
+  .btn-seefood:not(:disabled):not(.disabled):active:focus, .btn-seefood:not(:disabled):not(.disabled).active:focus,
+  .show > .btn-seefood.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem #ff6646ff;
+  }

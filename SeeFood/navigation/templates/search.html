@@ -1,0 +1,171 @@
+{%extends 'index.html'%}
+<!---
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <link rel="icon" href="images/seefoodicontransparent.png">
+ 
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="css/customStylesheet.css">
+    <link href="https://fonts.googleapis.com/css?family=Spartan&display=swap" rel="stylesheet">
+    <link href="css/mdb.min.css" rel="stylesheet">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+  </head>
+-->
+<!---
+    <body>
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+      <a class="navbar-brand" href="index.html"><img src="images/seefoodlogotransparentsmall.png" title="SeeFoodLogo" alt="SeeFood" height="45px" width = "90px" class="img-responsive"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown active">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">Search</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item spartan" href="search_pages/keyword.html">Keyword Search</a>
+                  <a class="dropdown-item spartan" href="search_pages/allergen.html">Allergen Search</a>
+                  <a class="dropdown-item spartan" href="search_pages/location.html">Location Search</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="profile.html">Profile</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="settings.html">Settings</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="product_info.html">Product Info</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+  -->
+  {%block content%}
+    <body>
+      <br>
+
+        <br>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 d-flex justify-content-center">
+              <h2 class="spartan">How It Works</h2>
+            </div>
+            <div class="col-sm-12 d-flex justify-content-center">
+              <p class="spartan">Use one of these three search functions to: </p>
+            </div>
+            <div class="col-sm-8 d-flex justify-content-center">
+              <ol class="spartan">
+                <li>Make sure your food won't have your allergens lurking inside</li>
+                <li>See the whole menu before you even arrive</li>
+                <li>Make a healthier decision</li>
+                <li>Feel confident in the food you eat</li>
+              </ol>
+            </div>
+            <div class="col-sm-4">
+              <br>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 text-center">
+                    <a class="btn btn-seefood spartan" href="search_pages/allergen.html" role="button">Allergen Search</a>
+                </div>
+                <div class="col-sm-4 text-center">
+                    <a class="btn btn-seefood spartan" href="{%url 'keyword-search' %}" role="button">Keyword Search</a>
+                </div>
+                <div class="col-sm-4 text-center">
+                  <a class="btn btn-seefood spartan" href="search_pages/location.html" role="button">Location Search</a>
+                </div>
+                  <div class="col-sm-4 right_space">
+                    <br>
+                    <h3 class="spartan">The Allergen Search:</h3>
+                    <p class="spartan">Select one or more allergens you would like to avoid, then we'll do the hard work and find you some great restaurants to choose from.</p>
+                </div>
+                <div class="col-sm-4 right_space">
+                    <br>
+                    <h3 class="spartan">The Keyword Search:</h3>
+                    <p class="spartan">Your classic search. Type in what you're looking for and use our filters to narrow down the search even further.</p>
+                </div>
+                <div class="col-sm-4 right_space">
+                    <br>
+                    <h3 class="spartan">The Location Search:</h3>
+                    <p class="spartan">Want to scout a specific area? Use our map feature to make finding the right food even easier.</p>
+                  </div>
+              </div>
+          </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+  <footer class="page-footer font-small elegant-color pt-4">
+    <br>
+    <div class="container-fluid text-center text-md-left">
+      <div class="row">
+        <div class="col-md-6 mt-md-0 mt-3">
+          <h5 class="text-uppercase spartan">SeeFood</h5>
+          <p class="spartan">Find the foods that make you happy.</p>
+        </div>
+        <hr class="clearfix w-100 d-md-none pb-3">
+        <div class="col-md-3 mb-md-0 mb-3">
+          <h5 class="text-uppercase spartan">Social Media</h5>
+          <ul class="list-unstyled spartan">
+          <li>
+            <a href="#!">Facebook</a>
+          </li>
+          <li>
+            <a href="#!">Instagram</a>
+          </li>
+          <li>
+            <a href="#!">Twitter</a>
+          </li>
+          <li>
+            <a href="#!">Email</a>
+          </li>
+        </ul>
+
+      </div>
+      <div class="col-md-3 mb-md-0 mb-3">
+        <h5 class="text-uppercase spartan">More</h5>
+        <ul class="list-unstyled spartan">
+          <li>
+            <a href="#!">Link 1</a>
+          </li>
+          <li>
+            <a href="#!">Link 2</a>
+          </li>
+          <li>
+            <a href="#!">Link 3</a>
+          </li>
+          <li>
+            <a href="#!">Link 4</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="footer-copyright text-center py-3">© 2020 Copymight:
+    <a href="index.html"> seefoodco.com</a>
+  </div>
+  
+  </footer>
+    </body>
+    {%endblock%}
+</html>
